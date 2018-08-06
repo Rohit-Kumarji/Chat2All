@@ -1,7 +1,8 @@
 var express=require('express');
 var socket=require('socket.io');
 var app=express();
-var server=app.listen(8000,function(){
+var port=process.env.PORT || 8000;
+var server=app.listen(port,function(){
 	console.log("server is started");
 });
 app.use(express.static('public'));
