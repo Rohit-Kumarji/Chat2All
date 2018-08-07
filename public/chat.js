@@ -1,4 +1,4 @@
-var socket=io.connect("http://localhost:8000");
+var socket=io.connect("https://chat2all.herokuapp.com");
 var message=document.getElementById('message');
 var output=document.getElementById('output');
 var btn=document.getElementById('send');
